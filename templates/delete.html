@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="/delete" method="POST">
+        <label for="id">ID of product to delete:</label><br>
+        <input type="text" id="idID" name="idName" value="Enter a valid ID"><br>
+
+        <label for="quantity">Quantity to delete:</label><br>
+         <input type="text" id="quantityID" name="quantityName" value="Enter a valid number"><br>
+         <input type="submit" value="Enter">
+        </form>
+        <a href="/home">Back to home</a><br>
+        {{if .}}
+    {{.}}
+{{end}}
+    </body>
+</html>

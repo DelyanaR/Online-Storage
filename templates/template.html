@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>  
+  <body>
+
+    <form action="/login" method="POST">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="usernameName" value=""><br>
+      <label for="data">Password:</label><br>
+      <input type="password" id="password" name="passwordData" value=""><br><br>
+      <input type="submit" value="Enter">
+    </form> 
+<br>
+    {{if .}}
+    {{.}}
+{{end}}
+
+  </body>
+</html>

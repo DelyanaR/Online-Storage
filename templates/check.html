@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="/check" method="POST">
+        <label for="id">ID of product to check:</label><br>
+        <input type="text" id="idID" name="idName" value="Enter a valid ID"><br>
+        <input type="submit" value="Enter">
+        </form>
+        <a href="/home">Back to home</a><br>
+        {{if .}}
+    {{.}}
+{{end}}
+    </body>
+</html>

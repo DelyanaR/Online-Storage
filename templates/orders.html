@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Order products</h1>
+
+        <form action="/orders" method="POST" name="tblform" >
+            <table width="80%"  id="alignment" >
+            <tr>
+            <th></th>
+            <th>ID of item</th>
+            <th>Quantity</th>
+            </tr>
+            <tr> 
+            <td>Item 1:</td> 
+            <td>
+                <input type="text" id="idID" name="idName1" value="Enter a valid ID"><br>
+            </td> 
+            <td><input type="number" value="0" id="q1" name="quantityName1"></td>
+            </tr>   
+            <tr>
+            <td>Item 2:</td>
+            <td>
+                <input type="text" id="idID" name="idName2" value="Enter a valid ID"><br>
+            </td>
+            <td><input  type="number" value="0" id="q2" name="quantityName2"></td>  
+            </tr> 
+            <tr>
+            <td>Item 3:</td>
+            <td>
+                <input type="text" id="idID" name="idName3" value="Enter a valid ID"><br>
+            </td>
+            <td><input type="number" value="0" id="q3" name="quantityName3"></td>
+            </tr> 
+            <tr>
+            <td>Item 4:</td>
+            <td>
+                <input type="text" id="idID" name="idName4" value="Enter a valid ID"><br>
+            </td>
+            <td><input type="number" value="0" id="q4" name="quantityName4"></td>
+            </tr>    
+            <tr>
+            <td></td> 
+            <td></td> 
+            <td><input type="submit" class="button" value="Order"></td>
+            </tr>
+            </table>
+            </form>
+<br>
+{{if .}}
+    {{.}}
+{{end}}
+       <a href="/home">Back to home</a><br>   
+    </body>
+</html>

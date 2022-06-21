@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Show ordered clothes</h1>
+        <form action="/show" method="POST">
+        <label for="id">ID of order:</label><br>
+        <input type="text" id="idID" name="idName" value="Enter a valid ID"><br>
+
+         <input type="submit" value="Enter">
+        </form>
+        <a href="/home">Back to home</a><br>
+        {{if .}}
+  <ul>
+  {{range .}}
+    <li>ID: {{.Id}}</li>
+    <li>Barcode: {{.Barcode}}</li>
+    <li>Price: {{.Price}}</li>
+    <li>Quantity ordered: {{.Quantity}}</li>
+    <li>Type: {{.Type}}</li>
+    <br>
+  {{end}}
+  </ul>
+{{end}}
+    </body>
+</html>

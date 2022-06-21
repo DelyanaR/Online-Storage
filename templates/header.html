@@ -1,0 +1,96 @@
+{{define "Header"}}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(116, 109, 109);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #6496e2;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+#rcorners {
+  border-radius: 15px 15px 15px 15px;
+  background: #6496e2;
+  padding: 50px; 
+  width: 80%;
+  height: 20px;
+  padding: 10px;
+  align-self: center;
+  margin: auto;
+  text-align: center;
+}
+
+#msg {
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>
+</head>
+<body>
+    <!-- <form action="/catalog" method="POST">
+        {{template "Catalog"}}
+      </form>  -->
+<!-- </body> -->
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#catalog">Catalog</a></li>
+</ul>
+{{end}}
